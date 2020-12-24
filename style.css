@@ -1,5 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap");
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  background-color: #fff;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right bottom, #790000, #dc3545);
+}
+
+::-moz-scrollbar {
+  background-color: #fff;
+  width: 10px;
+}
+
+::-moz-scrollbar-thumb {
+  background: linear-gradient(to right bottom, #790000, #dc3545);
+}
+
+::-ms-scrollbar {
+  background-color: #fff;
+  width: 10px;
+}
+
+::-ms-scrollbar-thumb {
+  background: linear-gradient(to right bottom, #790000, #dc3545);
+}
+
+/* Selection */
+::selection {
+  background: #dc3545;
+  color: #fff;
+}
+
 * {
   padding: 0;
   margin: 0;
