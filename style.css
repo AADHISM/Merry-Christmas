@@ -4,6 +4,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 100%;
 }
 
 body {
@@ -144,8 +149,11 @@ body {
 }
 
 .presents {
+  margin-top: 5rem;
   height: 80vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .gift {
@@ -186,5 +194,22 @@ body {
   100% {
     transform: scale(1);
     box-shadow: none;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .presents {
+    height: 170vh;
+    flex-direction: column;
+    overflow-y: visible;
+  }
+
+  .gift {
+    overflow-y: visible;
+    padding: 1rem;
   }
 }
