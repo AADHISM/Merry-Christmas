@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Charm", cursive;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./bgImg.jpeg) no-repeat center center / cover;
+  text-align: center;
+  position: relative;
+}
+
+.animated {
+  font-family: "Charm", cursive;
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 6rem;
+  background: url("./RedStripe.png") no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: moveBG 9s linear infinite alternate;
+  -webkit-animation: moveBG 9s linear infinite alternate;
+}
+
+/* Text Background Animation */
+@keyframes moveBG {
+  0% {
+    background-position: 0% 30%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.snow-ball {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 1rem;
+  top: -60px;
+  animation: fall 1s infinite;
+}
+
+.snow-ball-1 {
+  left: 0;
+}
+
+.snow-ball-2 {
+  left: 200px;
+  animation-delay: 1.3s;
+}
+
+.snow-ball-3 {
+  left: 400px;
+  animation-delay: 2.2s;
+}
+
+.snow-ball-4 {
+  left: 600px;
+  animation-delay: 3.35s;
+}
+
+.snow-ball-5 {
+  left: 800px;
+  animation-delay: 4.5s;
+}
+
+.snow-ball-6 {
+  left: 1000px;
+  animation-delay: 4.65s;
+}
+
+.snow-ball-7 {
+  left: 1200px;
+  animation-delay: 7.77s;
+}
+
+.snow-ball-8 {
+  left: 1400px;
+  animation-delay: 5s;
+}
+
+.snow-ball-9 {
+  left: 1600px;
+  animation-delay: 5.31s;
+}
+
+.snow-ball-10 {
+  left: 1800px;
+  animation-delay: 6.9s;
+}
+
+@keyframes fall {
+  0% {
+    top: -60px;
+  }
+
+  10% {
+    top: -20px;
+  }
+
+  20% {
+    top: 0px;
+  }
+
+  30% {
+    top: 20px;
+  }
+
+  40% {
+    top: 60px;
+  }
+
+  50% {
+    top: 100px;
+  }
+
+  60% {
+    top: 170px;
+  }
+
+  70% {
+    top: 250px;
+  }
+
+  80% {
+    top: 350px;
+  }
+
+  90% {
+    top: 450px;
+  }
+
+  100% {
+    top: 600px;
+  }
+}
+
+.presents {
+  height: 80vh;
+  display: flex;
+}
+
+.gift {
+  background-color: #e5e5e5;
+  width: fit-content;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 20px;
+  /* animation: pulse 1s infinite; */
+  animation: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.gift-1 {
+  animation-delay: 1.2s;
+}
+
+.gift-2 {
+  animation-delay: 2.3s;
+}
+
+.gift-3 {
+  animation-delay: 3.5s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  50% {
+    transform: scale(1.5);
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.7);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
